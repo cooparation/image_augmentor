@@ -11,7 +11,7 @@ from ops.noise import Noise
 from ops.translate import Translate
 from skimage.io import imread, imsave
 
-EXTENSIONS = ['png', 'jpg', 'jpeg', 'bmp']
+EXTENSIONS = ['png', 'jpg', 'JPG', 'jpeg', 'JPEG', 'bmp']
 WORKER_COUNT = max(cpu_count() - 1, 1)
 OPERATIONS = [Rotate, FlipH, FlipV, Translate, Noise, Zoom, Blur]
 
