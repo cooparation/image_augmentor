@@ -1,4 +1,4 @@
-python ../image_augmentor/main.py \
+python main.py \
     /apps/liusj/datasets/foodIDDataSets/trainSets_crop \
     rot_3 rot_-3 rot_180 \
     noise_0.01 noise_0.02 \
