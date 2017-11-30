@@ -20,3 +20,12 @@ for path in paths:
             if "__blur" in images:
                 print "rm images: ", images
                 os.remove(images)
+            if filename.split('.')[-1] in file_type_list:
+                tmpfilename = filename
+                tmpfilename = tmpfilename.replace(' ', '')
+                tmpfilename = tmpfilename.replace('(', '_')
+                tmpfilename = tmpfilename.replace(')', '')
+                sourceFile = os.path.join(root, tmpfilename)
+                if not tmpfilename == filename:
+                    print "rename images: ", images
+                    os.rename(images, sourceFile)
